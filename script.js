@@ -26,7 +26,7 @@
     this.vy   = (Math.random() - 0.5) * 0.25 - 0.1;
     this.life = Math.random() * 200 + 100;
     this.age  = 0;
-    const palette = ['201,149,108', '212,175,122', '232,184,154', '125,43,78'];
+    const palette = ['201,149,108', '184,137,58', '232,184,154', '154,107,75'];
     this.color = palette[Math.floor(Math.random() * palette.length)];
   };
   Particle.prototype.update = function () {
