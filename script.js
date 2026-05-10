@@ -1,8 +1,54 @@
 /* ═══════════════════════════════════════════════
-   KATNISS MUA — Interactive JavaScript
+   KATNISS MAKEOVER — Interactive JavaScript
    ═══════════════════════════════════════════════ */
 
 'use strict';
+
+/* ─── i18n ENGINE ─────────────────────────────── */
+(function initI18n() {
+  let currentLang = localStorage.getItem('kmua-lang') || 'en';
+
+  function applyLang(lang) {
+    const t = translations[lang];
+    if (!t) return;
+    currentLang = lang;
+    localStorage.setItem('kmua-lang', lang);
+
+    // Update <html lang> for accessibility
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+
+    // Text content
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      if (t[key] !== undefined) el.textContent = t[key];
+    });
+
+    // Inner HTML (for elements with <em>, <br>, etc.)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.dataset.i18nHtml;
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+
+    // Placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.dataset.i18nPlaceholder;
+      if (t[key] !== undefined) el.placeholder = t[key];
+    });
+
+    // Sync all switcher buttons across nav + mobile overlay
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('lang-btn--active', btn.dataset.lang === lang);
+    });
+  }
+
+  // Wire up all switcher buttons (nav + mobile overlay)
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+
+  // Apply saved / default language on load
+  applyLang(currentLang);
+})();
 
 /* ─── PARTICLE SYSTEM ─────────────────────────── */
 (function initParticles() {

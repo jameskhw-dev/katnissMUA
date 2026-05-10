@@ -26,14 +26,20 @@
     </div>
 
     <ul class="nav__links" id="navLinks">
-      <li><a href="#about" class="nav__link">About</a></li>
-      <li><a href="#skills" class="nav__link">Skills</a></li>
-      <li><a href="#services" class="nav__link">Services</a></li>
-      <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
-      <li><a href="#achievements" class="nav__link">Achievements</a></li>
-      <li><a href="#testimonials" class="nav__link">Reviews</a></li>
-      <li><a href="#contact" class="nav__link nav__link--cta">Book Now</a></li>
+      <li><a href="#about"         class="nav__link" data-i18n="nav.about">About</a></li>
+      <li><a href="#skills"        class="nav__link" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#services"      class="nav__link" data-i18n="nav.services">Services</a></li>
+      <li><a href="#portfolio"     class="nav__link" data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#achievements"  class="nav__link" data-i18n="nav.achievements">Achievements</a></li>
+      <li><a href="#testimonials"  class="nav__link" data-i18n="nav.reviews">Reviews</a></li>
+      <li><a href="#contact"       class="nav__link nav__link--cta" data-i18n="nav.book">Book Now</a></li>
     </ul>
+
+    <div class="lang-switcher" id="langSwitcher">
+      <button class="lang-btn lang-btn--active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+      <button class="lang-btn" data-lang="ms">BM</button>
+    </div>
 
     <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -44,14 +50,19 @@
   <div class="mobile-overlay" id="mobileOverlay">
     <button class="mobile-overlay__close" id="mobileClose">✕</button>
     <ul class="mobile-overlay__links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#testimonials">Reviews</a></li>
-      <li><a href="#contact">Book Now</a></li>
+      <li><a href="#about"        data-i18n="nav.about">About</a></li>
+      <li><a href="#skills"       data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#services"     data-i18n="nav.services">Services</a></li>
+      <li><a href="#portfolio"    data-i18n="nav.portfolio">Portfolio</a></li>
+      <li><a href="#achievements" data-i18n="nav.achievements">Achievements</a></li>
+      <li><a href="#testimonials" data-i18n="nav.reviews">Reviews</a></li>
+      <li><a href="#contact"      data-i18n="nav.book">Book Now</a></li>
     </ul>
+    <div class="lang-switcher lang-switcher--mobile" id="langSwitcherMobile">
+      <button class="lang-btn lang-btn--active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+      <button class="lang-btn" data-lang="ms">BM</button>
+    </div>
     <div class="mobile-overlay__socials">
       <a href="#" aria-label="Instagram">IG</a>
       <a href="#" aria-label="Pinterest">PT</a>
@@ -68,35 +79,35 @@
     </div>
 
     <div class="hero__content">
-      <p class="hero__eyebrow reveal-text">Luxury Makeup Artistry</p>
+      <p class="hero__eyebrow reveal-text" data-i18n="hero.eyebrow">Luxury Makeup Artistry</p>
       <h1 class="hero__title">
-        <span class="hero__title-line" data-text="Where Art">Where Art</span>
-        <span class="hero__title-line hero__title-line--italic" data-text="Meets Beauty">Meets Beauty</span>
+        <span class="hero__title-line" data-i18n="hero.title1">Where Art</span>
+        <span class="hero__title-line hero__title-line--italic" data-i18n="hero.title2">Meets Beauty</span>
       </h1>
-      <p class="hero__subtitle reveal-text">Bridal · Editorial · Avant-Garde · Film & Television</p>
+      <p class="hero__subtitle reveal-text" data-i18n="hero.subtitle">Bridal · Editorial · Avant-Garde · Film & Television</p>
       <div class="hero__actions reveal-text">
-        <a href="#portfolio" class="btn btn--primary">View Portfolio</a>
-        <a href="#contact" class="btn btn--ghost">Book a Session</a>
+        <a href="#portfolio" class="btn btn--primary" data-i18n="hero.cta1">View Portfolio</a>
+        <a href="#contact"   class="btn btn--ghost"   data-i18n="hero.cta2">Book a Session</a>
       </div>
     </div>
 
     <div class="hero__scroll-indicator">
-      <span>Scroll</span>
+      <span data-i18n="hero.scroll">Scroll</span>
       <div class="hero__scroll-line"></div>
     </div>
 
     <div class="hero__floating-badges">
       <div class="badge badge--1 float-anim">
         <span class="badge__num">10+</span>
-        <span class="badge__label">Years Exp.</span>
+        <span class="badge__label" data-i18n="badge.years">Years Exp.</span>
       </div>
       <div class="badge badge--2 float-anim-delay">
         <span class="badge__num">500+</span>
-        <span class="badge__label">Happy Clients</span>
+        <span class="badge__label" data-i18n="badge.clients">Happy Clients</span>
       </div>
       <div class="badge badge--3 float-anim">
         <span class="badge__num">12</span>
-        <span class="badge__label">Awards Won</span>
+        <span class="badge__label" data-i18n="badge.awards">Awards Won</span>
       </div>
     </div>
   </section>
@@ -115,26 +126,18 @@
         </div>
 
         <div class="about__content fade-in-right">
-          <p class="section__eyebrow">My Story</p>
-          <h2 class="section__title">Crafting Confidence,<br /><em>One Brushstroke at a Time</em></h2>
-          <p class="about__bio">
-            With over ten years transforming faces and stories, I've built my artistry at the intersection of technique and emotion.
-            From intimate bridal mornings to high-voltage editorial shoots in London and Paris, every look I create is a conversation
-            between the person in my chair and the best version of themselves.
-          </p>
-          <p class="about__bio">
-            Trained at the London College of Fashion and certified by MAC Cosmetics, my philosophy is simple: makeup should feel like
-            <em>you</em> — only elevated. I work exclusively with luxury, skin-kind formulas to ensure my art stays flawless from first
-            light to final dance.
-          </p>
+          <p class="section__eyebrow" data-i18n="about.eyebrow">My Story</p>
+          <h2 class="section__title" data-i18n-html="about.title">Crafting Confidence,<br /><em>One Brushstroke at a Time</em></h2>
+          <p class="about__bio" data-i18n-html="about.bio1">With over ten years transforming faces and stories, I've built my artistry at the intersection of technique and emotion. From intimate bridal mornings to high-voltage editorial shoots in London and Paris, every look I create is a conversation between the person in my chair and the best version of themselves.</p>
+          <p class="about__bio" data-i18n-html="about.bio2">Trained at the London College of Fashion and certified by MAC Cosmetics, my philosophy is simple: makeup should feel like <em>you</em> — only elevated. I work exclusively with luxury, skin-kind formulas to ensure my art stays flawless from first light to final dance.</p>
           <div class="about__pills">
-            <span class="pill">Bridal Specialist</span>
-            <span class="pill">Editorial Artist</span>
-            <span class="pill">Film & TV</span>
-            <span class="pill">Airbrush Certified</span>
-            <span class="pill">Colour Theorist</span>
+            <span class="pill" data-i18n="pill.bridal">Bridal Specialist</span>
+            <span class="pill" data-i18n="pill.editorial">Editorial Artist</span>
+            <span class="pill" data-i18n="pill.filmtv">Film & TV</span>
+            <span class="pill" data-i18n="pill.airbrush">Airbrush Certified</span>
+            <span class="pill" data-i18n="pill.colour">Colour Theorist</span>
           </div>
-          <a href="#contact" class="btn btn--primary">Let's Create Together</a>
+          <a href="#contact" class="btn btn--primary" data-i18n="about.cta">Let's Create Together</a>
         </div>
       </div>
     </div>
@@ -144,43 +147,43 @@
   <section class="skills section section--dark" id="skills">
     <div class="container">
       <div class="section__header text-center">
-        <p class="section__eyebrow">Expertise</p>
-        <h2 class="section__title">The Art Behind <em>The Look</em></h2>
+        <p class="section__eyebrow" data-i18n="skills.eyebrow">Expertise</p>
+        <h2 class="section__title" data-i18n-html="skills.title">The Art Behind <em>The Look</em></h2>
       </div>
 
       <div class="skills__grid">
         <div class="skills__bars fade-in-left">
           <div class="skill-bar" data-pct="98">
             <div class="skill-bar__meta">
-              <span class="skill-bar__name">Bridal Makeup</span>
+              <span class="skill-bar__name" data-i18n="skill.bridal">Bridal Makeup</span>
               <span class="skill-bar__pct">98%</span>
             </div>
             <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
           </div>
           <div class="skill-bar" data-pct="95">
             <div class="skill-bar__meta">
-              <span class="skill-bar__name">Editorial & High Fashion</span>
+              <span class="skill-bar__name" data-i18n="skill.editorial">Editorial & High Fashion</span>
               <span class="skill-bar__pct">95%</span>
             </div>
             <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
           </div>
           <div class="skill-bar" data-pct="90">
             <div class="skill-bar__meta">
-              <span class="skill-bar__name">Airbrush Technique</span>
+              <span class="skill-bar__name" data-i18n="skill.airbrush">Airbrush Technique</span>
               <span class="skill-bar__pct">90%</span>
             </div>
             <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
           </div>
           <div class="skill-bar" data-pct="88">
             <div class="skill-bar__meta">
-              <span class="skill-bar__name">Avant-Garde & SFX</span>
+              <span class="skill-bar__name" data-i18n="skill.sfx">Avant-Garde & SFX</span>
               <span class="skill-bar__pct">88%</span>
             </div>
             <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
           </div>
           <div class="skill-bar" data-pct="92">
             <div class="skill-bar__meta">
-              <span class="skill-bar__name">Film & Television</span>
+              <span class="skill-bar__name" data-i18n="skill.film">Film & Television</span>
               <span class="skill-bar__pct">92%</span>
             </div>
             <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
@@ -190,23 +193,23 @@
         <div class="skills__icons fade-in-right">
           <div class="skill-card">
             <div class="skill-card__icon">✦</div>
-            <h3 class="skill-card__title">Colour Theory</h3>
-            <p class="skill-card__desc">Precision colour matching across all skin tones and undertones using the Fitzpatrick scale.</p>
+            <h3 class="skill-card__title" data-i18n="card.colour.title">Colour Theory</h3>
+            <p  class="skill-card__desc"  data-i18n="card.colour.desc">Precision colour matching across all skin tones and undertones using the Fitzpatrick scale.</p>
           </div>
           <div class="skill-card">
             <div class="skill-card__icon">◈</div>
-            <h3 class="skill-card__title">Skin Prep & Care</h3>
-            <p class="skill-card__desc">Bespoke skin preparation protocols ensuring the perfect canvas before a single brushstroke.</p>
+            <h3 class="skill-card__title" data-i18n="card.skin.title">Skin Prep & Care</h3>
+            <p  class="skill-card__desc"  data-i18n="card.skin.desc">Bespoke skin preparation protocols ensuring the perfect canvas before a single brushstroke.</p>
           </div>
           <div class="skill-card">
             <div class="skill-card__icon">❋</div>
-            <h3 class="skill-card__title">Longevity Tech</h3>
-            <p class="skill-card__desc">Setting techniques and product layering that keep looks immaculate through 16-hour days.</p>
+            <h3 class="skill-card__title" data-i18n="card.longevity.title">Longevity Tech</h3>
+            <p  class="skill-card__desc"  data-i18n="card.longevity.desc">Setting techniques and product layering that keep looks immaculate through 16-hour days.</p>
           </div>
           <div class="skill-card">
             <div class="skill-card__icon">◉</div>
-            <h3 class="skill-card__title">Lash Architecture</h3>
-            <p class="skill-card__desc">Custom lash applications from naturalistic enhancement to full editorial drama.</p>
+            <h3 class="skill-card__title" data-i18n="card.lash.title">Lash Architecture</h3>
+            <p  class="skill-card__desc"  data-i18n="card.lash.desc">Custom lash applications from naturalistic enhancement to full editorial drama.</p>
           </div>
         </div>
       </div>
@@ -217,52 +220,52 @@
   <section class="services section" id="services">
     <div class="container">
       <div class="section__header text-center">
-        <p class="section__eyebrow">What I Offer</p>
-        <h2 class="section__title">Services Tailored <em>for You</em></h2>
+        <p class="section__eyebrow" data-i18n="services.eyebrow">What I Offer</p>
+        <h2 class="section__title" data-i18n-html="services.title">Services Tailored <em>for You</em></h2>
       </div>
 
       <div class="services__grid">
         <div class="service-card fade-in-up" style="--delay:0s">
           <div class="service-card__glow"></div>
           <div class="service-card__icon">◎</div>
-          <h3 class="service-card__title">Bridal Package</h3>
-          <p class="service-card__desc">Full day bridal artistry including trial, morning-of, and bridal party. Custom to your vision, flawless in every photograph.</p>
-          <div class="service-card__tag">From £450</div>
+          <h3 class="service-card__title" data-i18n="svc.bridal.title">Bridal Package</h3>
+          <p  class="service-card__desc"  data-i18n="svc.bridal.desc">Full day bridal artistry including trial, morning-of, and bridal party. Custom to your vision, flawless in every photograph.</p>
+          <div class="service-card__tag"  data-i18n="svc.bridal.tag">From £450</div>
         </div>
         <div class="service-card fade-in-up" style="--delay:0.1s">
           <div class="service-card__glow"></div>
           <div class="service-card__icon">✧</div>
-          <h3 class="service-card__title">Editorial Shoot</h3>
-          <p class="service-card__desc">High-concept looks for magazine spreads, lookbooks, and brand campaigns. Collaborated with Vogue, Harper's Bazaar, and leading fashion houses.</p>
-          <div class="service-card__tag">From £300/day</div>
+          <h3 class="service-card__title" data-i18n="svc.editorial.title">Editorial Shoot</h3>
+          <p  class="service-card__desc"  data-i18n="svc.editorial.desc">High-concept looks for magazine spreads, lookbooks, and brand campaigns. Collaborated with Vogue, Harper's Bazaar, and leading fashion houses.</p>
+          <div class="service-card__tag"  data-i18n="svc.editorial.tag">From £300/day</div>
         </div>
         <div class="service-card fade-in-up" style="--delay:0.2s">
           <div class="service-card__glow"></div>
           <div class="service-card__icon">⬡</div>
-          <h3 class="service-card__title">Film & Television</h3>
-          <p class="service-card__desc">On-set continuity makeup for film, TV, and commercial productions. HD and 8K camera-ready formulations.</p>
-          <div class="service-card__tag">Day Rate Available</div>
+          <h3 class="service-card__title" data-i18n="svc.film.title">Film & Television</h3>
+          <p  class="service-card__desc"  data-i18n="svc.film.desc">On-set continuity makeup for film, TV, and commercial productions. HD and 8K camera-ready formulations.</p>
+          <div class="service-card__tag"  data-i18n="svc.film.tag">Day Rate Available</div>
         </div>
         <div class="service-card fade-in-up" style="--delay:0.3s">
           <div class="service-card__glow"></div>
           <div class="service-card__icon">❉</div>
-          <h3 class="service-card__title">Special Occasions</h3>
-          <p class="service-card__desc">Galas, proms, birthdays, and milestone moments. You deserve to look extraordinary — let's make it happen.</p>
-          <div class="service-card__tag">From £120</div>
+          <h3 class="service-card__title" data-i18n="svc.occasion.title">Special Occasions</h3>
+          <p  class="service-card__desc"  data-i18n="svc.occasion.desc">Galas, proms, birthdays, and milestone moments. You deserve to look extraordinary — let's make it happen.</p>
+          <div class="service-card__tag"  data-i18n="svc.occasion.tag">From £120</div>
         </div>
         <div class="service-card fade-in-up" style="--delay:0.4s">
           <div class="service-card__glow"></div>
           <div class="service-card__icon">◈</div>
-          <h3 class="service-card__title">Masterclass</h3>
-          <p class="service-card__desc">Private one-to-one coaching sessions for aspiring artists and personal technique refinement. Theory + hands-on practice.</p>
-          <div class="service-card__tag">From £200/session</div>
+          <h3 class="service-card__title" data-i18n="svc.masterclass.title">Masterclass</h3>
+          <p  class="service-card__desc"  data-i18n="svc.masterclass.desc">Private one-to-one coaching sessions for aspiring artists and personal technique refinement. Theory + hands-on practice.</p>
+          <div class="service-card__tag"  data-i18n="svc.masterclass.tag">From £200/session</div>
         </div>
         <div class="service-card fade-in-up" style="--delay:0.5s">
           <div class="service-card__glow"></div>
           <div class="service-card__icon">✦</div>
-          <h3 class="service-card__title">Virtual Consultation</h3>
-          <p class="service-card__desc">Personalised virtual sessions for product curation, technique guidance, and look planning. Worldwide access.</p>
-          <div class="service-card__tag">From £75</div>
+          <h3 class="service-card__title" data-i18n="svc.virtual.title">Virtual Consultation</h3>
+          <p  class="service-card__desc"  data-i18n="svc.virtual.desc">Personalised virtual sessions for product curation, technique guidance, and look planning. Worldwide access.</p>
+          <div class="service-card__tag"  data-i18n="svc.virtual.tag">From £75</div>
         </div>
       </div>
     </div>
@@ -272,25 +275,24 @@
   <section class="portfolio section section--dark" id="portfolio">
     <div class="container">
       <div class="section__header text-center">
-        <p class="section__eyebrow">Portfolio</p>
-        <h2 class="section__title">A Gallery of <em>Transformations</em></h2>
+        <p class="section__eyebrow" data-i18n="portfolio.eyebrow">Portfolio</p>
+        <h2 class="section__title" data-i18n-html="portfolio.title">A Gallery of <em>Transformations</em></h2>
       </div>
 
       <div class="portfolio__filters">
-        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="bridal">Bridal</button>
-        <button class="filter-btn" data-filter="editorial">Editorial</button>
-        <button class="filter-btn" data-filter="avantgarde">Avant-Garde</button>
-        <button class="filter-btn" data-filter="film">Film & TV</button>
+        <button class="filter-btn filter-btn--active" data-filter="all"        data-i18n="filter.all">All</button>
+        <button class="filter-btn"                    data-filter="bridal"     data-i18n="filter.bridal">Bridal</button>
+        <button class="filter-btn"                    data-filter="editorial"  data-i18n="filter.editorial">Editorial</button>
+        <button class="filter-btn"                    data-filter="avantgarde" data-i18n="filter.avantgarde">Avant-Garde</button>
+        <button class="filter-btn"                    data-filter="film"       data-i18n="filter.film">Film & TV</button>
       </div>
 
       <div class="portfolio__grid" id="portfolioGrid">
-        <!-- Bridal -->
         <div class="portfolio-item" data-category="bridal">
           <div class="portfolio-item__img" style="--hue:340;--sat:40%;--light:30%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Bridal</span>
-              <h4 class="portfolio-item__title">Golden Hour Bride</h4>
+              <span class="portfolio-item__category" data-i18n="pf.1.cat">Bridal</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.1.title">Golden Hour Bride</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -298,8 +300,8 @@
         <div class="portfolio-item portfolio-item--tall" data-category="editorial">
           <div class="portfolio-item__img" style="--hue:280;--sat:35%;--light:20%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Editorial</span>
-              <h4 class="portfolio-item__title">Vogue — Autumn Issue</h4>
+              <span class="portfolio-item__category" data-i18n="pf.2.cat">Editorial</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.2.title">Vogue — Autumn Issue</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -307,8 +309,8 @@
         <div class="portfolio-item" data-category="avantgarde">
           <div class="portfolio-item__img" style="--hue:20;--sat:50%;--light:25%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Avant-Garde</span>
-              <h4 class="portfolio-item__title">Fire & Ice</h4>
+              <span class="portfolio-item__category" data-i18n="pf.3.cat">Avant-Garde</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.3.title">Fire & Ice</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -316,8 +318,8 @@
         <div class="portfolio-item" data-category="film">
           <div class="portfolio-item__img" style="--hue:200;--sat:30%;--light:25%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Film & TV</span>
-              <h4 class="portfolio-item__title">BBC Drama Series</h4>
+              <span class="portfolio-item__category" data-i18n="pf.4.cat">Film & TV</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.4.title">BBC Drama Series</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -325,8 +327,8 @@
         <div class="portfolio-item portfolio-item--wide" data-category="bridal">
           <div class="portfolio-item__img" style="--hue:350;--sat:35%;--light:28%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Bridal</span>
-              <h4 class="portfolio-item__title">Champagne Morning</h4>
+              <span class="portfolio-item__category" data-i18n="pf.5.cat">Bridal</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.5.title">Champagne Morning</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -334,8 +336,8 @@
         <div class="portfolio-item" data-category="editorial">
           <div class="portfolio-item__img" style="--hue:160;--sat:30%;--light:22%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Editorial</span>
-              <h4 class="portfolio-item__title">Harper's Bazaar</h4>
+              <span class="portfolio-item__category" data-i18n="pf.6.cat">Editorial</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.6.title">Harper's Bazaar</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -343,8 +345,8 @@
         <div class="portfolio-item" data-category="avantgarde">
           <div class="portfolio-item__img" style="--hue:60;--sat:45%;--light:20%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Avant-Garde</span>
-              <h4 class="portfolio-item__title">Celestial Bodies</h4>
+              <span class="portfolio-item__category" data-i18n="pf.7.cat">Avant-Garde</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.7.title">Celestial Bodies</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -352,8 +354,8 @@
         <div class="portfolio-item portfolio-item--tall" data-category="film">
           <div class="portfolio-item__img" style="--hue:240;--sat:25%;--light:20%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Film & TV</span>
-              <h4 class="portfolio-item__title">Netflix Original</h4>
+              <span class="portfolio-item__category" data-i18n="pf.8.cat">Film & TV</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.8.title">Netflix Original</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -361,8 +363,8 @@
         <div class="portfolio-item" data-category="bridal">
           <div class="portfolio-item__img" style="--hue:330;--sat:38%;--light:32%;">
             <div class="portfolio-item__overlay">
-              <span class="portfolio-item__category">Bridal</span>
-              <h4 class="portfolio-item__title">Blush & Ivory</h4>
+              <span class="portfolio-item__category" data-i18n="pf.9.cat">Bridal</span>
+              <h4  class="portfolio-item__title"     data-i18n="pf.9.title">Blush & Ivory</h4>
               <button class="portfolio-item__expand" aria-label="View">⊕</button>
             </div>
           </div>
@@ -385,26 +387,26 @@
   <section class="achievements section" id="achievements">
     <div class="container">
       <div class="section__header text-center">
-        <p class="section__eyebrow">Recognition</p>
-        <h2 class="section__title">Awards & <em>Milestones</em></h2>
+        <p class="section__eyebrow" data-i18n="achieve.eyebrow">Recognition</p>
+        <h2 class="section__title" data-i18n-html="achieve.title">Awards & <em>Milestones</em></h2>
       </div>
 
       <div class="stats-row">
         <div class="stat-item fade-in-up">
           <span class="stat-item__num" data-count="500">0</span><span class="stat-item__suffix">+</span>
-          <p class="stat-item__label">Happy Clients</p>
+          <p class="stat-item__label" data-i18n="stat.clients">Happy Clients</p>
         </div>
         <div class="stat-item fade-in-up" style="--delay:0.1s">
           <span class="stat-item__num" data-count="10">0</span><span class="stat-item__suffix">+</span>
-          <p class="stat-item__label">Years Experience</p>
+          <p class="stat-item__label" data-i18n="stat.years">Years Experience</p>
         </div>
         <div class="stat-item fade-in-up" style="--delay:0.2s">
           <span class="stat-item__num" data-count="12">0</span>
-          <p class="stat-item__label">Industry Awards</p>
+          <p class="stat-item__label" data-i18n="stat.awards">Industry Awards</p>
         </div>
         <div class="stat-item fade-in-up" style="--delay:0.3s">
           <span class="stat-item__num" data-count="30">0</span><span class="stat-item__suffix">+</span>
-          <p class="stat-item__label">Magazine Features</p>
+          <p class="stat-item__label" data-i18n="stat.features">Magazine Features</p>
         </div>
       </div>
 
@@ -412,43 +414,43 @@
         <div class="award-card fade-in-up" style="--delay:0s">
           <div class="award-card__year">2024</div>
           <div class="award-card__icon">✦</div>
-          <h3 class="award-card__title">UK Bridal Awards</h3>
-          <p class="award-card__subtitle">Makeup Artist of the Year — Gold</p>
+          <h3 class="award-card__title"    data-i18n="award.1.title">UK Bridal Awards</h3>
+          <p  class="award-card__subtitle" data-i18n="award.1.sub">Makeup Artist of the Year — Gold</p>
         </div>
         <div class="award-card fade-in-up" style="--delay:0.1s">
           <div class="award-card__year">2023</div>
           <div class="award-card__icon">◎</div>
-          <h3 class="award-card__title">British Beauty Awards</h3>
-          <p class="award-card__subtitle">Best Editorial Makeup — Finalist</p>
+          <h3 class="award-card__title"    data-i18n="award.2.title">British Beauty Awards</h3>
+          <p  class="award-card__subtitle" data-i18n="award.2.sub">Best Editorial Makeup — Finalist</p>
         </div>
         <div class="award-card fade-in-up" style="--delay:0.2s">
           <div class="award-card__year">2023</div>
           <div class="award-card__icon">❋</div>
-          <h3 class="award-card__title">BAFTA Production</h3>
-          <p class="award-card__subtitle">Hair & Makeup Department — Credited</p>
+          <h3 class="award-card__title"    data-i18n="award.3.title">BAFTA Production</h3>
+          <p  class="award-card__subtitle" data-i18n="award.3.sub">Hair & Makeup Department — Credited</p>
         </div>
         <div class="award-card fade-in-up" style="--delay:0.3s">
           <div class="award-card__year">2022</div>
           <div class="award-card__icon">◈</div>
-          <h3 class="award-card__title">The Wedding Industry</h3>
-          <p class="award-card__subtitle">Highly Commended — South England</p>
+          <h3 class="award-card__title"    data-i18n="award.4.title">The Wedding Industry</h3>
+          <p  class="award-card__subtitle" data-i18n="award.4.sub">Highly Commended — South England</p>
         </div>
         <div class="award-card fade-in-up" style="--delay:0.4s">
           <div class="award-card__year">2021</div>
           <div class="award-card__icon">✧</div>
-          <h3 class="award-card__title">Vogue Feature</h3>
-          <p class="award-card__subtitle">"Top 10 MUAs to Watch" — Vogue UK</p>
+          <h3 class="award-card__title"    data-i18n="award.5.title">Vogue Feature</h3>
+          <p  class="award-card__subtitle" data-i18n="award.5.sub">"Top 10 MUAs to Watch" — Vogue UK</p>
         </div>
         <div class="award-card fade-in-up" style="--delay:0.5s">
           <div class="award-card__year">2020</div>
           <div class="award-card__icon">⬡</div>
-          <h3 class="award-card__title">LCF Alumni Award</h3>
-          <p class="award-card__subtitle">Outstanding Graduate Achievement</p>
+          <h3 class="award-card__title"    data-i18n="award.6.title">LCF Alumni Award</h3>
+          <p  class="award-card__subtitle" data-i18n="award.6.sub">Outstanding Graduate Achievement</p>
         </div>
       </div>
 
       <div class="press-logos">
-        <p class="press-logos__title">As Seen In</p>
+        <p class="press-logos__title" data-i18n="press.title">As Seen In</p>
         <div class="press-logos__row">
           <div class="press-logo">Vogue</div>
           <div class="press-logo">Harper's Bazaar</div>
@@ -465,79 +467,64 @@
   <section class="testimonials section section--dark" id="testimonials">
     <div class="container">
       <div class="section__header text-center">
-        <p class="section__eyebrow">Kind Words</p>
-        <h2 class="section__title">What Clients <em>Say</em></h2>
+        <p class="section__eyebrow" data-i18n="testimonials.eyebrow">Kind Words</p>
+        <h2 class="section__title" data-i18n-html="testimonials.title">What Clients <em>Say</em></h2>
       </div>
 
       <div class="testimonial-slider" id="testimonialSlider">
         <div class="testimonial-track" id="testimonialTrack">
           <div class="testimonial-card">
             <div class="testimonial-card__stars">★★★★★</div>
-            <blockquote class="testimonial-card__quote">
-              "Katniss is nothing short of a miracle worker. On my wedding day she made me feel like the most beautiful version of myself.
-              The look lasted 14 hours — through tears, dancing, and rain — and still looked perfect in every photo."
-            </blockquote>
+            <blockquote class="testimonial-card__quote" data-i18n="t1.quote">"Katniss is nothing short of a miracle worker. On my wedding day she made me feel like the most beautiful version of myself. The look lasted 14 hours — through tears, dancing, and rain — and still looked perfect in every photo."</blockquote>
             <div class="testimonial-card__author">
               <div class="testimonial-card__avatar">S</div>
               <div>
-                <p class="testimonial-card__name">Sophie Harrington</p>
-                <p class="testimonial-card__role">Bride, Surrey 2024</p>
+                <p class="testimonial-card__name" data-i18n="t1.name">Sophie Harrington</p>
+                <p class="testimonial-card__role" data-i18n="t1.role">Bride, Surrey 2024</p>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="testimonial-card__stars">★★★★★</div>
-            <blockquote class="testimonial-card__quote">
-              "Working with Katniss on our autumn editorial was an absolute pleasure. She interprets a creative brief with an instinct
-              that very few artists possess. The looks were bold, precise, and exactly what our brand needed."
-            </blockquote>
+            <blockquote class="testimonial-card__quote" data-i18n="t2.quote">"Working with Katniss on our autumn editorial was an absolute pleasure. She interprets a creative brief with an instinct that very few artists possess. The looks were bold, precise, and exactly what our brand needed."</blockquote>
             <div class="testimonial-card__author">
               <div class="testimonial-card__avatar">M</div>
               <div>
-                <p class="testimonial-card__name">Marcus Delvalle</p>
-                <p class="testimonial-card__role">Creative Director, Elora Magazine</p>
+                <p class="testimonial-card__name" data-i18n="t2.name">Marcus Delvalle</p>
+                <p class="testimonial-card__role" data-i18n="t2.role">Creative Director, Elora Magazine</p>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="testimonial-card__stars">★★★★★</div>
-            <blockquote class="testimonial-card__quote">
-              "The masterclass changed how I think about makeup entirely. Katniss teaches with such generosity and clarity —
-              I left with skills I use every single day. Genuinely transformative."
-            </blockquote>
+            <blockquote class="testimonial-card__quote" data-i18n="t3.quote">"The masterclass changed how I think about makeup entirely. Katniss teaches with such generosity and clarity — I left with skills I use every single day. Genuinely transformative."</blockquote>
             <div class="testimonial-card__author">
               <div class="testimonial-card__avatar">A</div>
               <div>
-                <p class="testimonial-card__name">Amara Osei</p>
-                <p class="testimonial-card__role">Aspiring MUA, London</p>
+                <p class="testimonial-card__name" data-i18n="t3.name">Amara Osei</p>
+                <p class="testimonial-card__role" data-i18n="t3.role">Aspiring MUA, London</p>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="testimonial-card__stars">★★★★★</div>
-            <blockquote class="testimonial-card__quote">
-              "From pre-production to wrap, Katniss was the most professional member of our makeup department I've ever had the pleasure
-              of working with. She brings artistry and calm in equal measure to every set."
-            </blockquote>
+            <blockquote class="testimonial-card__quote" data-i18n="t4.quote">"From pre-production to wrap, Katniss was the most professional member of our makeup department I've ever had the pleasure of working with. She brings artistry and calm in equal measure to every set."</blockquote>
             <div class="testimonial-card__author">
               <div class="testimonial-card__avatar">R</div>
               <div>
-                <p class="testimonial-card__name">Rachel Birch</p>
-                <p class="testimonial-card__role">Producer, Silvergate Films</p>
+                <p class="testimonial-card__name" data-i18n="t4.name">Rachel Birch</p>
+                <p class="testimonial-card__role" data-i18n="t4.role">Producer, Silvergate Films</p>
               </div>
             </div>
           </div>
           <div class="testimonial-card">
             <div class="testimonial-card__stars">★★★★★</div>
-            <blockquote class="testimonial-card__quote">
-              "I've never felt more glamorous in my life. Katniss listened to exactly what I wanted and delivered something even better.
-              My partner cried when they saw me. Highly recommend for any special occasion."
-            </blockquote>
+            <blockquote class="testimonial-card__quote" data-i18n="t5.quote">"I've never felt more glamorous in my life. Katniss listened to exactly what I wanted and delivered something even better. My partner cried when they saw me. Highly recommend for any special occasion."</blockquote>
             <div class="testimonial-card__author">
               <div class="testimonial-card__avatar">L</div>
               <div>
-                <p class="testimonial-card__name">Lily Chen</p>
-                <p class="testimonial-card__role">Special Occasion Client, London</p>
+                <p class="testimonial-card__name" data-i18n="t5.name">Lily Chen</p>
+                <p class="testimonial-card__role" data-i18n="t5.role">Special Occasion Client, London</p>
               </div>
             </div>
           </div>
@@ -556,8 +543,8 @@
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section__header text-center">
-        <p class="section__eyebrow">Get In Touch</p>
-        <h2 class="section__title">Let's Begin Your <em>Story</em></h2>
+        <p class="section__eyebrow" data-i18n="contact.eyebrow">Get In Touch</p>
+        <h2 class="section__title" data-i18n-html="contact.title">Let's Begin Your <em>Story</em></h2>
       </div>
 
       <div class="contact__grid">
@@ -565,29 +552,29 @@
           <div class="contact__info-item">
             <div class="contact__info-icon">✉</div>
             <div>
-              <p class="contact__info-label">Email</p>
+              <p class="contact__info-label" data-i18n="info.email.label">Email</p>
               <a href="mailto:hello@katnissmua.com" class="contact__info-value">hello@katnissmua.com</a>
             </div>
           </div>
           <div class="contact__info-item">
             <div class="contact__info-icon">☎</div>
             <div>
-              <p class="contact__info-label">Phone</p>
+              <p class="contact__info-label" data-i18n="info.phone.label">Phone</p>
               <a href="tel:+447700123456" class="contact__info-value">+44 7700 123 456</a>
             </div>
           </div>
           <div class="contact__info-item">
             <div class="contact__info-icon">◎</div>
             <div>
-              <p class="contact__info-label">Based In</p>
-              <p class="contact__info-value">London, UK · Available Worldwide</p>
+              <p class="contact__info-label" data-i18n="info.location.label">Based In</p>
+              <p class="contact__info-value" data-i18n="info.location.value">London, UK · Available Worldwide</p>
             </div>
           </div>
           <div class="contact__info-item">
             <div class="contact__info-icon">◷</div>
             <div>
-              <p class="contact__info-label">Availability</p>
-              <p class="contact__info-value">Mon – Sat · By appointment</p>
+              <p class="contact__info-label" data-i18n="info.avail.label">Availability</p>
+              <p class="contact__info-value"  data-i18n="info.avail.value">Mon – Sat · By appointment</p>
             </div>
           </div>
 
@@ -610,39 +597,39 @@
         <form class="contact__form fade-in-right" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" id="name" name="name" class="form-input" placeholder="Jane Smith" required />
+              <label for="name" class="form-label" data-i18n="form.name.label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" data-i18n-placeholder="form.name.ph" placeholder="Jane Smith" required />
             </div>
             <div class="form-group">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="jane@example.com" required />
+              <label for="email" class="form-label" data-i18n="form.email.label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" data-i18n-placeholder="form.email.ph" placeholder="jane@example.com" required />
             </div>
           </div>
           <div class="form-group">
-            <label for="service" class="form-label">Service Enquiry</label>
+            <label for="service" class="form-label" data-i18n="form.service.label">Service Enquiry</label>
             <select id="service" name="service" class="form-input form-select">
-              <option value="">Select a service…</option>
-              <option>Bridal Package</option>
-              <option>Editorial Shoot</option>
-              <option>Film & Television</option>
-              <option>Special Occasion</option>
-              <option>Masterclass</option>
-              <option>Virtual Consultation</option>
+              <option value="" data-i18n="form.service.ph">Select a service…</option>
+              <option data-i18n="opt.bridal">Bridal Package</option>
+              <option data-i18n="opt.editorial">Editorial Shoot</option>
+              <option data-i18n="opt.film">Film & Television</option>
+              <option data-i18n="opt.occasion">Special Occasion</option>
+              <option data-i18n="opt.masterclass">Masterclass</option>
+              <option data-i18n="opt.virtual">Virtual Consultation</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="date" class="form-label">Event Date</label>
+            <label for="date" class="form-label" data-i18n="form.date.label">Event Date</label>
             <input type="date" id="date" name="date" class="form-input" />
           </div>
           <div class="form-group">
-            <label for="message" class="form-label">Tell Me About Your Vision</label>
-            <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Describe your event, inspiration, and any specific requirements…" required></textarea>
+            <label for="message" class="form-label" data-i18n="form.message.label">Tell Me About Your Vision</label>
+            <textarea id="message" name="message" class="form-input form-textarea" rows="5" data-i18n-placeholder="form.message.ph" placeholder="Describe your event, inspiration, and any specific requirements…" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--full">
-            <span class="btn__text">Send Enquiry</span>
-            <span class="btn__loader" hidden>Sending…</span>
+            <span class="btn__text"   data-i18n="form.submit">Send Enquiry</span>
+            <span class="btn__loader" data-i18n="form.sending" hidden>Sending…</span>
           </button>
-          <p class="form__success" id="formSuccess" hidden>Thank you! I'll be in touch within 24 hours. ✦</p>
+          <p class="form__success" id="formSuccess" data-i18n="form.success" hidden>Thank you! I'll be in touch within 24 hours. ✦</p>
         </form>
       </div>
     </div>
@@ -656,20 +643,20 @@
           <div class="footer__logo">
             <img src="resources/logo.jpeg" alt="Katniss Makeover" class="nav__logo-img" />
           </div>
-          <p class="footer__tagline">Where Art Meets Beauty</p>
+          <p class="footer__tagline" data-i18n="footer.tagline">Where Art Meets Beauty</p>
         </div>
         <div class="footer__nav">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about"         data-i18n="footer.nav.about">About</a></li>
+            <li><a href="#skills"        data-i18n="footer.nav.skills">Skills</a></li>
+            <li><a href="#services"      data-i18n="footer.nav.services">Services</a></li>
+            <li><a href="#portfolio"     data-i18n="footer.nav.portfolio">Portfolio</a></li>
+            <li><a href="#achievements"  data-i18n="footer.nav.achievements">Achievements</a></li>
+            <li><a href="#contact"       data-i18n="footer.nav.contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer__socials-col">
-          <p class="footer__social-title">Follow the Journey</p>
+          <p class="footer__social-title" data-i18n="footer.social.title">Follow the Journey</p>
           <div class="footer__socials">
             <a href="#" aria-label="Instagram">Instagram</a>
             <a href="#" aria-label="Pinterest">Pinterest</a>
@@ -678,8 +665,8 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p>© 2026 Katniss Makeover. All rights reserved.</p>
-        <p>Crafted with care · London, UK</p>
+        <p data-i18n="footer.copyright">© 2026 Katniss Makeover. All rights reserved.</p>
+        <p data-i18n="footer.crafted">Crafted with care · London, UK</p>
       </div>
     </div>
 
@@ -687,6 +674,7 @@
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
